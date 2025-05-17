@@ -1,0 +1,467 @@
+header{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 160px;
+            background: var(--utama);z-index: -1;
+        }
+        .member{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 14px;
+            color: white;
+        }
+        .member span{
+            width: 100%;
+        }
+        .member p{
+            font-size: 11px;
+        }
+        .member h5{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .foto-profil{
+            width: 45px;
+            border-radius: 100px;
+        }
+        .bell{
+            width: 22px;
+            filter: invert(100%) sepia(0%) saturate(7451%) hue-rotate(52deg) brightness(93%) contrast(112%);
+        }
+
+        .saldo-member{
+            color: white;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .saldo-member p{
+            font-size: 12px;
+            font-weight: 400;
+        }
+        .saldo-member h5{
+            font-size: 18px;
+        }
+        .saldo-member span{
+            font-size: 12px;
+            margin-right: 2px;
+            font-weight: bold;
+        }
+        .flx{
+            display: flex;
+            margin-top: 5px;
+        }
+.the-panel{
+    background: white;
+  padding: 14px;
+  border-radius: 15px;
+  margin-top: 0px;
+}
+.menu-panel{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  text-align: center;
+        }
+        .menu-panel img{
+            width: 35px;
+        }
+        .menu-panel p{
+            font-size: 12px;
+            font-weight: 550;
+        }
+        .cvr{
+            background: #ffffff42;
+            width: 37px;
+            height: 35px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cvr img{
+            width: 15px;
+            filter: invert(100%) sepia(94%) saturate(22%) hue-rotate(38deg) brightness(106%) contrast(106%);
+        }
+        .w-full{
+            width: 100%;
+        }
+
+.overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 99999999;
+        }
+.offcanvas {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    padding: 15px;
+    z-index: 99999999;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transform: translateY(100%);
+    transition: transform 0.2s ease-in-out;
+}
+        .btn {
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .btn-close {
+            background: red;
+            float: right;
+        }
+.layanan{
+    padding: 14px;
+    border-radius: 15px;
+    background: white;
+    margin-top: 10px;
+}
+.menu-panel-layanan{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  text-align: center;
+        }
+        .autoplay-progress svg {
+  transition: stroke-dashoffset 0.1s linear;
+}
+.menu-panel-layanan div{
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+.menu-panel-layanan img{
+            width:47px;
+            padding: 5px;
+            border-radius: 13px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+            border-bottom: 3px solid #f1f1f1;
+        }
+.menu-panel-layanan p{
+        font-size: 11px;
+        font-weight: 550;
+}
+.tabs {
+            width: 100%;
+            max-width: 100%;
+            position: relative;
+            background: #fff;
+            border-radius: 15px;
+            margin-top: 10px;
+        }
+        .tab-buttons {
+            display: flex;
+            position: relative;
+            border-bottom: 3px solid #f1f1f1;
+        }
+        .tab-buttons button {
+            flex: 1;
+            padding: 10px;
+            padding-top: 13px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+            position: relative;
+            transition: color 0.3s;
+        }
+        .tab-buttons button.active {
+            color: var(--utama);
+        }
+        .tab-indicator {
+            position: absolute;
+            bottom: -3px;
+            height: 3px;
+            width: 50%;
+            background: var(--utama);
+            transition: transform 0.3s ease-in-out;
+        }
+        .tab-content {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+        .content {
+            display: flex;
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+        .content div {
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            flex-shrink: 0;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+    swiper-container {
+      width: 100%;
+      height: 100%;
+      margin-top: 10px;
+      border-radius: 15px;
+    }
+
+    swiper-slide {
+      text-align: center;
+      border-radius: 15px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+    swiper-slide{
+        width: 92%;
+    }
+    .secure{
+    padding: 14px;
+    border-radius: 15px;
+    background: white;
+    border-top: 1px solid #f1f1f1;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .header-scure{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .shield-img{
+    width: 30px;
+  }
+  .header-scure h5{
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .header-scure p{
+    font-size: 11px;
+    margin: 0;
+  }
+  .lindungi{
+    display: flex;
+    border: 1px solid #42a5f5;
+    border-radius: 4px;
+    gap: 4px;
+    align-items: center;
+    padding-right: 5px;
+  }
+  .d-flex{
+    display: flex;
+    align-self: center;
+  }
+  .w-100{
+    width: 100%;
+  }
+  .lindungi h4{
+    font-size: 11px;
+    font-weight: bold;
+    color:var(--utama);
+    margin: 0;
+  }
+  .lindungi button{
+    background: var(--utama);
+    padding: 4px;
+    color: white;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+  }
+  .lindungi button h5{
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 3px;
+  }
+  .lindungi button img{
+    width: 15px;
+    filter: invert(100%) sepia(0%) saturate(7496%) hue-rotate(145deg) brightness(119%) contrast(100%);
+  }
+  .name-percent {
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    animation: flip 8s infinite ease-in-out;
+    height: 160px; 
+}
+
+.text-container span {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+@keyframes flip {
+    0%, 25% {
+        transform: translateY(0);
+    }
+    30%, 50% {
+        transform: translateY(-40px);
+    }
+    55%, 75% {
+        transform: translateY(-80px);
+    }
+    80%, 95% {
+        transform: translateY(-120px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.bottom-secure{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+.bottom-secure div{
+  text-align: center;
+  width: 100%;
+}
+.bottom-secure p{
+  font-size: 10px;
+  font-weight: 450;
+  margin-bottom:0 ;
+  margin-top: 2px;
+}
+.bottom-secure img{
+  width: 30px;
+}
+    .poin{
+        background: aliceblue;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    .poin span{
+        width: 100%;
+    }
+    .poin h5{
+        font-size: 14px;
+    }
+    .poin p{
+        font-size: 11px;
+    }
+    .icon-poin{
+        width: 30px;
+    }
+    .poin button{
+        border: none;
+        background: var(--utama);
+        color: white;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    .transaksi{
+        padding: 15px;
+        border-radius: 15px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .transaksi p{
+        font-size: 12px;
+    }
+    .transaksi h5{
+        font-size: 14px;
+    }
+    .one-b{
+        background: rgba(0, 255, 34, 0.226);
+    }
+    .two-b{
+        background: rgba(255, 0, 0, 0.226);
+    }
+    .three-b{
+        background: rgba(255, 166, 0, 0.24);
+    }
+    .four-b{
+        background: #005d8842;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+            .menu-paket{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-bottom: 1px solid #f1f1f1;
+                padding: 10px;
+                padding-left: 5px;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+            .menu-paket:hover{
+                background: aliceblue;
+                color: var(--utama);
+                border-radius: 6px;
+
+            }
+            .menu-paket p{
+                font-size: 14px;
+                width: 100%;
+            }
+            .menu-paket img{
+                width: 11px;
+                opacity: .7;
+            }
+        
+            .collapse-container.active .collapse-content {
+                display: block;
+            }
+.saldo-box{
+        position: relative;
+        padding: 14px;
+        border-radius: 15px;
+        background: #f1f1f1;
+        width: 100%;
+    }
+    .saldo-box img{
+        width: 23px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .saldo-box p{
+        font-size: 11px;
+        margin: 0;
+    }
